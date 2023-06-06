@@ -1,0 +1,49 @@
+<!-- codewithedison -->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../img/fav.png" sizes="32x32" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact| codewithEdison</title>
+        <link rel="stylesheet" href="../css/contact.css">
+
+    
+        </head>
+    <body>
+        <div class="formBox">
+            <h2>Contact Me</h2>
+            <p>You will hear from Me at the earliest!</p>
+            <form 
+            action="mailto:edsnkvn@gmail.com"
+            onsubmit="return contactme()"
+            name="contact"
+            method="post">
+                <div class="nameInp">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" placeholder="Full Name" name="name" id="name">
+    
+                </div>
+                <div class="mailInp">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="mail" id="mail" placeholder="Email">
+                </div>
+                <div class="phoneInp">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="number" name="phone" id="phone" placeholder="Phone" min="100000" max="9999999999">
+                </div>
+                <div class="queryInp">
+                    <textarea name="query" id="query" cols="30" rows="5"
+                        placeholder="Any comment or your query"></textarea>
+                </div>
+                <div class="submitBtn">
+                    <button  onclick="contactme()">Send</button>
+                </div>
+            </form>
+            <p class="extra">You can also contact Me at +250-788-240-303</p>
+        </div>
+        
+    </body>
+</html>
